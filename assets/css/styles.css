@@ -44,6 +44,7 @@ a {
 .header {
     padding-top: 36px;
     background: #fffcf4;
+    padding-bottom: 10px;
 }
 
 .header .body {
@@ -89,6 +90,13 @@ a {
     text-align: center;
     color: #5f5b53;
 }
+.header .item:hover {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: rgb(23, 17, 0);
+}
 
 .header .body .btn-sigup {
     display: inline-block;
@@ -99,7 +107,7 @@ a {
 /* ======== Hero Css============ */
 
 .hero {
-    padding-top: 64px;
+    padding-top: 54px;
     height: calc(900px - 86px);
     background: #fffcf4;
 }
@@ -124,7 +132,7 @@ a {
     bottom: 48px;
     right: 0;
     width: 270px;
-    padding: 28px 24px;
+    padding: 24px;
     border-radius: 12px;
     background-color: #fff;
 }
@@ -231,4 +239,110 @@ a {
 
 .information-hero .desc + .desc {
     margin-top: 8px;
+}
+/* ==========Popular Css================ */
+
+.popular {
+    padding: 200px 0;
+    background: #fffbfb;
+}
+.popular .header-popular {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular .title-block .title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+.popular .title-block .desc {
+    width: 458px;
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+.popular .link-block {
+    display: flex;
+
+    gap: 0 18px;
+    margin-top: 42px;
+}
+.popular .link-block .link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffb900;
+    background-color: transparent;
+}
+.popular .link-block .active {
+    background: #ffb900;
+}
+
+.popular .body {
+    display: flex;
+    margin-top: 55px;
+    gap: 0 30px;
+}
+.popular .body .item {
+    flex: 1;
+    background: #fff;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+.popular .body .img-popular {
+    width: 370px;
+    object-fit: cover;
+    height: 278px;
+    border-radius: 12px 12px 0px 0px;
+}
+.popular .body .item .info {
+    padding: 16px 22px 22px;
+}
+.popular .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular .row .title-item {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+.popular .row .rates .points {
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #fea31b;
+}
+.popular .body .info .desc-popular {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+.popular .body .info .row-price {
+    margin-top: 12px;
+}
+.popular .body .info .price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+.popular .btn-popular {
+    min-width: 118px;
+}
+.popular .btn-popular:hover {
+    cursor: pointer;
+    background: #ffb900;
 }
