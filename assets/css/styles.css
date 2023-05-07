@@ -216,9 +216,14 @@ a {
 .information-hero .desc-2 {
     margin-top: 48px;
 }
+.information-hero .des-3 {
+    margin-left: -28px;
+}
 
 .information-hero .desc strong {
     font-family: var(--font-heading);
+    padding-right: 8px;
+    padding-left: 28px;
     font-weight: 700;
     font-size: 4.4rem;
     color: #171100;
