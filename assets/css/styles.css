@@ -1,3 +1,229 @@
-h1 {
-    color: red;
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --font-heading: Sen, san-serif;
+    --primary-color: #ffb900;
+}
+/*  Common Css */
+a {
+    text-decoration: none;
+}
+.content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;
+}
+.fixed {
+    position: sticky;
+    top: -20px;
+    z-index: 1;
+}
+.btn {
+    padding: 11px 16px;
+    background: #171100;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ==============Header CSS ============== */
+.header {
+    padding-top: 36px;
+    background: #fffcf4;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+}
+
+.header .body ul {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav {
+    margin-left: auto;
+}
+
+.header .nav li.active a {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #171100;
+}
+.header .nav li.active {
+    position: relative;
+}
+.header .nav li.active::before {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    background: #171100;
+    border-radius: 999px;
+}
+.header .nav .item {
+    padding: 8px 21px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75px;
+    text-align: center;
+    color: #5f5b53;
+}
+
+.header .body .btn-sigup {
+    display: inline-block;
+    min-width: 144px;
+    margin-left: 70px;
+}
+
+/* ======== Hero Css============ */
+
+.hero {
+    padding-top: 64px;
+    height: calc(900px - 86px);
+    background: #fffcf4;
+}
+
+.hero .body {
+    display: flex;
+}
+.hero .body .media-block {
+    position: relative;
+    flex: 1;
+    border-radius: 20px;
+}
+.hero .body .media-block .img-hero {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hero-summary {
+    position: absolute;
+    bottom: 48px;
+    right: 0;
+    width: 270px;
+    padding: 28px 24px;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.hero-summary .item {
+    display: flex;
+    align-items: center;
+}
+.hero-summary .item + .item {
+    margin-top: 14px;
+}
+.hero-summary .info {
+    margin-left: 16px;
+}
+.hero-summary .info .label {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+.hero-summary .info .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+.content-block {
+    flex: 1;
+    padding-top: 64px;
+    margin-left: auto;
+    width: 470px;
+}
+
+.content-block .information-hero {
+    margin-left: auto;
+    width: 470px;
+}
+.information-hero .heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.information-hero .desc {
+    margin-top: 22px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+}
+.information-hero .cta-group {
+    margin-top: 38px;
+    display: flex;
+}
+.information-hero .btn-cta {
+    min-width: 180px;
+    background: var(--primary-color);
+    border-radius: 32px;
+    padding: 18px 16px;
+}
+
+.cta-group .watch-video {
+    margin-left: 28px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #fffcf4;
+    cursor: pointer;
+}
+
+.watch-video .icon {
+    width: 40px;
+    height: 39px;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    border-radius: 50%;
+    line-height: 40px;
+}
+.watch-video .action {
+    margin-left: 14px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #171100;
+}
+.information-hero .desc-2 {
+    margin-top: 48px;
+}
+
+.information-hero .desc strong {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 4.4rem;
+    color: #171100;
+}
+
+.information-hero .desc + .desc {
+    margin-top: 8px;
 }
