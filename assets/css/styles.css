@@ -346,3 +346,51 @@ a {
     cursor: pointer;
     background: #ffb900;
 }
+/* ===========Quote CSS=========== */
+.quote {
+    padding: 96px 0;
+    background: #2e2100;
+}
+.quote .body {
+    display: flex;
+    align-items: center;
+}
+.quote .body .left {
+    flex: 1;
+}
+.quote .body .left .name {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1.42;
+    color: #f7f7f7;
+    font-family: var(--font-heading);
+}
+.quote .body .left .arts {
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb3;
+}
+.quote .body .left .dot-blocks {
+    margin-top: 28px;
+}
+
+.quote .body .right {
+    position: relative;
+    flex: 3;
+}
+.quote .body .right .desc {
+    width: 740px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.54;
+    color: #ffffff;
+}
+.quote .body .img-vector {
+    position: absolute;
+    top: -28px;
+    left: -30px;
+}
