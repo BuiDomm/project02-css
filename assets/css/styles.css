@@ -39,6 +39,15 @@ a {
     text-align: center;
     color: #ffffff;
 }
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.line-clamp.line-2 {
+    --line-clamp: 2;
+}
 
 /* ==============Header CSS ============== */
 .header {
@@ -282,9 +291,12 @@ a {
     justify-content: center;
     border: 1px solid #ffb900;
     background-color: transparent;
+    color: var(--primary-color);
 }
-.popular .link-block .active {
-    background: #ffb900;
+.popular .link-block .link:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
 }
 
 .popular .body {
@@ -295,13 +307,18 @@ a {
 .popular .body .item {
     flex: 1;
     background: #fff;
-    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
+    border: 1px solid #e2dfda;
+}
+.popular .body .item:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
 }
 .popular .body .img-popular {
-    width: 370px;
-    object-fit: cover;
+    width: calc(100% + 2px);
     height: 278px;
+    object-fit: cover;
+    margin: -1px;
     border-radius: 12px 12px 0px 0px;
 }
 .popular .body .item .info {
@@ -313,10 +330,19 @@ a {
     align-items: center;
 }
 .popular .row .title-item {
+    padding-right: 8px;
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
+}
+.popular .row .title-item a {
     color: #171100;
+}
+
+.popular .row .rates {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 .popular .row .rates .points {
     font-weight: 400;
