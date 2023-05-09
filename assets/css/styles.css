@@ -9,6 +9,7 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 :root {
     --font-heading: Sen, san-serif;
@@ -738,4 +739,25 @@ information .right {
     line-height: 1.86;
     text-align: center;
     color: #807d74;
+}
+.footer .author {
+    margin-top: 10px;
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer .author {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #807d74;
+}
+.footer .author .link-author {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.75;
+    color: #cac5c5;
 }
