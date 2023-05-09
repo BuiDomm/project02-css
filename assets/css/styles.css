@@ -356,7 +356,7 @@ a {
     align-items: center;
 }
 .quote .body .left {
-    flex: 1;
+    width: 15%;
 }
 .quote .body .left .name {
     margin-top: 18px;
@@ -378,8 +378,9 @@ a {
 }
 
 .quote .body .right {
+    margin-left: 241px;
     position: relative;
-    flex: 3;
+    width: 66%;
 }
 .quote .body .right .desc {
     width: 740px;
@@ -614,4 +615,100 @@ information .right {
 }
 .blog .dot-nav .dot:nth-child(2) {
     background: #ffb900;
+}
+
+/* ============Footer CSS========== */
+.footer {
+    padding: 96px 0 38px 0;
+    background: #2e2100;
+}
+
+.footer .body {
+    display: flex;
+}
+.footer .body .item1 {
+    width: 35%;
+}
+.footer .body .item1 .desc {
+    width: 267px;
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+.footer .body .item .title-footer {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+}
+.footer .body .item .hr {
+    margin-top: 14px;
+    width: 130px;
+    height: 1px;
+    background-color: #59554b;
+}
+.footer .body .item .list {
+    margin-top: 14px;
+}
+.footer .body .item .list .nav {
+    display: inline-block;
+    margin-top: 14px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+.footer .body .item1 .icon-block {
+    margin-top: 18px;
+}
+.footer .body .item1 .icon-block .icon + .icon {
+    margin-left: 18px;
+}
+.footer .body .item2 {
+    width: 21.6%;
+}
+
+.footer .body .item3 {
+    width: 21.6%;
+}
+.footer .body .item4 {
+    width: 21.6%;
+    margin-left: 130px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #bfbcb2;
+}
+.footer .body .item4 .location {
+    margin-top: 28px;
+}
+.footer .body .item4 .email {
+    margin-top: 18px;
+}
+.footer .body .item4 .phone {
+    margin-top: 18px;
+}
+
+.footer .body .item4 strong {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #ffffff;
+}
+.footer .hr-end {
+    margin-top: 38px;
+    width: 100%;
+    background: #59554b;
+    height: 1px;
+}
+
+.footer .copyright {
+    margin-top: 28px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    text-align: center;
+    color: #807d74;
 }
