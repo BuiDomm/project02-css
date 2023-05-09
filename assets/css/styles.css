@@ -334,6 +334,7 @@ a {
     font-weight: 600;
     font-size: 1.8rem;
     line-height: 1.67;
+    word-break: break-all;
 }
 .popular .row .title-item a {
     color: #171100;
