@@ -394,3 +394,224 @@ a {
     top: -28px;
     left: -30px;
 }
+
+/* =============Details CSS============= */
+.details {
+    margin-top: 234px;
+}
+.details .body {
+    display: flex;
+}
+.details .left {
+    display: flex;
+    gap: 0 30px;
+    width: 49%;
+}
+.details .left .first-img {
+    height: 404px;
+    width: 270px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.details .left .second-img {
+    margin-top: -34px;
+    height: 405px;
+    width: 270px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.details .right {
+    width: 51%;
+    margin-left: 130px;
+}
+.details .right .heading-details {
+    margin-top: 22px;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+.details .right .desc-details {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+.details .right .btn-details {
+    display: inline-block;
+    margin-top: 32px;
+    background: #ffb900;
+    min-width: 137px;
+    border-radius: 26px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #ffffff;
+}
+/* ==============Information CSS============== */
+/* .information {
+    margin-top: 200px;
+}
+
+.information .body {
+    display: flex;
+    justify-content: space-between;
+}
+.information .left {
+    width: 49%;
+}
+.information .left .title-information {
+    margin-top: 71px;
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    letter-spacing: -0.02em;
+    color: #171100;
+    font-family: var(--font-heading);
+}
+.information .left .desc {
+
+}
+information .right {
+    width: 51px;
+}
+.information .right .img-information {
+    width: 470px;
+    height: 440px;
+    object-fit: cover;
+    border-radius: 20px;
+} */
+
+.destails-1 .body {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.destails-1 .right {
+    width: 51%;
+    margin-left: 0;
+}
+.destails-1 .right .heading-details {
+    margin-top: 71px;
+}
+.destails-1 .left {
+    width: 49%;
+}
+.destails-1 .left .first-img {
+    width: 470px;
+    height: 440px;
+    margin-left: auto;
+}
+/* ===========Blog CSS=========== */
+
+.blog {
+    margin-top: 200px;
+    padding: 96px 0 140px 0;
+    background: #fffcf4;
+}
+.blog .header-blog {
+    width: 448px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blog .header-blog .title-blog {
+    font-weight: 700;
+    font-size: 3.8rem;
+    line-height: 1.26;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #130606;
+    font-family: var(--font-heading);
+}
+.blog .header-blog .desc-blog {
+    margin-top: 16px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1 75;
+    color: #696262;
+}
+
+.blog .list {
+    display: flex;
+    gap: 0 30px;
+    margin-top: 55px;
+}
+.blog .list .item {
+    flex: 1;
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+}
+
+.blog .list .item .img-item {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+.blog .list .info {
+    padding: 20px 20px 28px 20px;
+}
+.blog .list .item .date {
+    display: flex;
+    align-items: center;
+    gap: 0 4px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+.blog .list .item .date::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #ffb900;
+}
+.blog .list .item .hr {
+    margin-top: 12px;
+    width: 160px;
+    height: 1px;
+    background: #e2dfda;
+    border-radius: 0.5px;
+}
+.blog .list .item .question {
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #171100;
+}
+.blog .list .item .btn-blog {
+    display: inline-block;
+    margin-top: 24px;
+    min-width: 118px;
+    padding: 12px 21px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #ffffff;
+}
+.blog .list .item .btn-blog:hover {
+    background: #ffb900;
+}
+.blog .dot-nav {
+    margin-top: 38px;
+    text-align: center;
+}
+
+.blog .dot-nav .dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: #5f5b53;
+    border-radius: 50%;
+}
+.blog .dot-nav .dot:nth-child(2) {
+    background: #ffb900;
+}
